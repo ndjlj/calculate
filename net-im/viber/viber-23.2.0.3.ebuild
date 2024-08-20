@@ -160,4 +160,5 @@ src_install() {
 
 pkg_postinst() {
 	optfeature "ffmpeg backend", media-video/ffmpeg:0/56.58.58[${MULTILIB_USEDEP}]
+	xdg_desktop_database_update
 }
